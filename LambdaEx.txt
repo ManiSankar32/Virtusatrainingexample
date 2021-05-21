@@ -1,0 +1,19 @@
+package Virtusa_samples;
+
+interface Cab
+{
+	void bookcab(String source,String destination);
+}
+public class Lamda_example {
+	int instancevar=76;
+public static void main(String args[])
+{
+	Cab cab=(source,destination)->{
+		System.out.print("Car is booked from "+source+" to "+destination+" Enjoy");
+		int localvar=786;
+		System.out.print("local"+localvar);
+		//System.out.print("Instance"+instancevar);
+	};
+	cab.bookcab("chennai", "hyderabad");
+}
+}
