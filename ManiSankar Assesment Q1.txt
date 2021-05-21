@@ -1,0 +1,41 @@
+package Sample_assesment;
+
+import java.io.*;
+import java.util.*;
+
+
+public class Palindrome {
+	public static boolean isPalindrome(int n){
+		int r,sum=0;
+		int temp=n;
+		while(n>0){    
+			   r=n%10;  //getting remainder  
+			   sum=(sum*10)+r;    
+			   n=n/10;    
+			  } 
+		if(temp==sum)
+			return true;
+		else
+			return false;
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner sc = new Scanner(System.in);
+		 int first = sc.nextInt();
+		 int last = sc.nextInt();
+		 int count = 0;
+		 List<Integer> l1 = new ArrayList<Integer>();
+	        for (int i = first; i <= last; i++) {
+	            
+	            if(isPalindrome(i)){
+	            	l1.add(i);
+	            
+	                count=count + i;
+	            }
+	        }
+	        System.out.println(l1);
+     System.out.println(count);
+	}
+
+}
