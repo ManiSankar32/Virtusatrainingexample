@@ -1,0 +1,32 @@
+package Sample_assesment;
+
+import java.util.*;
+public class ManiCollectionsQ3 {
+
+	public static void main(String args[])
+	{
+		HashMap<Integer,Integer> hm =  new HashMap<Integer,Integer>();
+		hm.put(12,90);
+		hm.put(34,90);
+		hm.put(35,90);
+		hm.put(33,90);
+		hm.put(56,88);
+		List<Integer> oddnum = new ArrayList<Integer>(); 
+		Iterator<Integer> it = hm.keySet().iterator();
+		int sum =0;
+		while(it.hasNext())
+		{
+			int t = (int) it.next();
+			if(t%2!=0)
+			{
+				oddnum.add(t);
+				sum = sum +hm.get(t);
+				System.out.println(t+" "+hm.get(t));
+				
+			}
+		}
+
+		System.out.println("average: "+sum/2);
+		
+	}
+}

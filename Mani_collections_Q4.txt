@@ -1,0 +1,25 @@
+package Sample_assesment;
+
+import java.util.*;
+
+public class ManiAssesQ4 {
+
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	List<String> li = new ArrayList<String>();
+	for(int i=0;i<3;i++)
+	{
+	 li.add(sc.nextLine());
+	}
+	Map<String,String> hm  = new HashMap<String,String>();
+	for(String s:li)
+	{
+		hm.put(s.toUpperCase().substring(0, 3), s);
+	}
+	for(String i:hm.keySet())
+	{
+    	System.out.println(i+" "+hm.get(i));
+    
+	}
+	}
+}
