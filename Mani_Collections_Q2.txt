@@ -1,0 +1,50 @@
+package Sample_assesment;
+
+import java.util.*;
+//import java.util.regex.Pattern;
+//import java.util.stream.Collectors;
+
+public class Assesment2String {
+	public static void main(String args[])
+	{
+		List<String> li = new ArrayList<String>();
+		li.add("mani#90#80#85");
+		li.add("venkat#95#90#75");
+	Map<String,Integer> map = new HashMap<String,Integer>();
+	map.put( strrng(li.get(0)), maxmarks(li.get(0)));
+	map.put( strrng(li.get(1)), maxmarks(li.get(1)));
+	String max="";
+	int x=0;
+	System.out.println(map);
+	for(String s:map.keySet()) {
+		//int n=Integer.parseInt(map.get(s));
+		if(map.get(s) > x)
+		{
+			max=s;
+			x=map.get(s);
+		}
+	}
+	System.out.print(max+"has scored"+x);
+	
+	
+	}
+
+	 static String strrng(String s) {
+		// TODO Auto-generated method stub
+		String[] ar = s.split("#");
+		return ar[0];
+	}
+	private static int maxmarks(String s)
+	{
+		String ar[] = s.split("#");
+		int result=0;
+		for(int i=1;i<ar.length;i++)
+		{
+			result+=Integer.valueOf(ar[i]);
+		}
+	//	int res=Integer.parseInt(result);
+		return result;
+		
+	}
+
+}
