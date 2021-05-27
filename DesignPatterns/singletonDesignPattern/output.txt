@@ -1,0 +1,6 @@
+Trying to select a new captain
+New Captain Selected for our team
+Trying to make a new captain for our team
+You already have a Captain.send him for the toss
+both instances are same
+singletonDesignPattern.Captain@39ed3c8d

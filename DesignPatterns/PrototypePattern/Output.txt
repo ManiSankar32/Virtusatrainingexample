@@ -1,0 +1,3 @@
+*** Prototype pattern Demo ***
+Car: Green Nano and its price is: Rs.189818
+Car: Yellow Ford and its price is: Rs.561925

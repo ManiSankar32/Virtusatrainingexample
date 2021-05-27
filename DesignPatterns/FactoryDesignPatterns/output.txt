@@ -1,0 +1,4 @@
+Duck Says Pack-Pack
+DesignPatterns.Duck@2d363fb3
+Tiger says Halum-Halum
+DesignPatterns.Tiger@5aaa6d82
