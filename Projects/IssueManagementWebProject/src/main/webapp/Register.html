@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+label{
+ text-align:left;
+ padding:5px;
+ margin:12px 12px 12px 0px;
+ display: inline-block;
+  width: 30%;
+}
+input,select{
+width:50%;
+ padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container {
+
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+ 
+}
+</style>
+<script>
+document.getElementById("submit").addEventListener("click", myfunc);
+function myfunc(){
+	var pw = document.getElementById("pass");
+	var pw2 = document.getElementById("confpass");  
+	  if(pw != pw2)  
+	  {   
+	    alert("Passwords did not match");  
+	  } else {  
+	    alert("Password created successfully");  
+	  }  
+}
+</script>
+</head>
+<body>
+<div class="container">
+<h1>Register details</h1>
+<form action="Registerdetails" method="post">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name" required><br><br>
+<label for="email">Email:</label>
+<input type="email" name="email" id="email" required><br><br>
+<label for="pass">Password:</label>
+<input type="password" name="password" id="pass" required><br><br>
+<label for="confpass">Conform Password:</label>
+<input type="password" name="confpassword" id="confpass" required><br><br>
+<label for="gen">Gender:</label>
+<select id="gen" class="gender" required>
+<option value="Male">Male</option>
+<option value="Female">FeMale</option>
+<option value="others">Others</option>
+</select><br><br>
+<label>Mobile No:</label>
+<input type="tel" pattern="[0-9]{10}" id="number" name="number">
+<label for="city">City:</label>
+<input type="text" name="city" id="city" required><br><br>
+<input type="submit" id="submit">
+</form>
+</div>
+</body>
+</html>

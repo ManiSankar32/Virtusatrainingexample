@@ -1,0 +1,16 @@
+h1{
+	text-align: center;
+	color:blue;
+}
+.form{
+	text-align: center;
+}
+
+.home a{
+	color:green;
+	text-decoration: none;
+	right: 50px;
+	padding: 10px;
+	bottom: 50px;
+	
+}

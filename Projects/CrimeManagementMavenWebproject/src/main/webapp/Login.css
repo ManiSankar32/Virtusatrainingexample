@@ -1,0 +1,9 @@
+form{
+	max-width: 300px;
+	margin: auto;
+}
+
+input[type="email"] {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}

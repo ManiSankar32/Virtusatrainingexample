@@ -1,0 +1,30 @@
+title{
+	text-align: center;
+}
+h1{
+	text-align: center;
+	color: blue;
+}
+.form{
+	 padding:30px;
+	 text-align: center;
+}
+p{
+	padding: 3px;
+	
+}
+p label{
+	left: 50px;
+	right:50px;
+}
+.success {
+	color: green;
+	text-align: center;
+}
+.home a{
+	color:green;
+	text-decoration: none;
+	padding: 10px;
+	bottom: 50px;
+	
+}
